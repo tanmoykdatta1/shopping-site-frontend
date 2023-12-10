@@ -1,0 +1,41 @@
+
+import React, {useState} from "react";
+import "../styles/profile.css";
+export default function Profile ()  {
+  const [action, setAction] = useState("Sign Up");
+  return (<div className="container">
+           < div className="header">
+             <div className="text">{action}</div>
+             <div className="underline"></div>
+           </div>
+
+          <div className="inputs">
+
+            {action === "log in" ? <div></div> : <div className= "input">
+              <img src="../public/image/image1.png" alt=""/>
+              <input type="text" placeholder= "Name"></input>
+          </div>}
+
+          <div className= "input">
+            <input type= "email" placeholder= "Email Address"></input>
+          </div>
+
+          <div className="input"> 
+            <input type= "password" placeholder= "password"></input>
+          </div>
+        </div>
+        
+        {action === "Sign Up" ? <div></div> : <div className="forgot-passwrod">Forgot password, <span>Click here!</span></div>}
+
+        <div className="submit-container">
+          <div className={action === "log in" ? "submit gray" :"submit"} onClick={() =>  {setAction("Sign Up")}}>Sign Up</div>
+          <div className={action === "Sign Up" ? "submit gray" :"submit"} onClick={() => {setAction("Log in")}}>Log in </div>
+        </div>
+        </div>);
+        
+      
+
+   
+  
+};
+

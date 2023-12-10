@@ -1,0 +1,18 @@
+.categoies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.title {
+    font-size: 25px;
+    color: blueviolet;
+    margin-top: 10px;
+    border-left: 15px;
+
+}

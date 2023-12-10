@@ -1,0 +1,31 @@
+import React from "react";
+import "../styles/Home.css";
+import CategoryCard from "../Components/CategoryCard";
+import ProductCard from "../Components/ProductCard";
+import Footer from "../Components/Footer";
+
+
+const home = () => {
+  return (
+    <div>
+        <div>
+            <p className="title">Categoies</p>
+             <section className="categoies">
+              <CategoryCard categoryText="T-Shirt"/>          
+              <CategoryCard categoryText="Mobile"/>   
+              <CategoryCard categoryText="Computer"/>  
+            </section>
+       
+        </div>
+        <div>
+            <p className="title">Products</p>
+            <section className="Products">
+              <ProductCard productImg="https://cdn.pixabay.com/photo/2023/11/21/10/12/tea-8402876_1280.png" title="TV"/>
+              <ProductCard productImg="https://cdn.pixabay.com/photo/2023/11/21/10/12/tea-8402876_1280.png" title="Mobile" />
+              <ProductCard productImg="https://cdn.pixabay.com/photo/2023/11/21/10/12/tea-8402876_1280.png" title="Laptop"/>
+              <ProductCard productImg="https://cdn.pixabay.com/photo/2023/11/21/10/12/tea-8402876_1280.png" title="Smart Watch"/>
+              <ProductCard productImg="https://cdn.pixabay.com/photo/2023/11/21/10/12/tea-8402876_1280.png" title="Camera"/>
+              <ProductCard productImg="https://cdn.pixabay.com/photo/2023/11/21/10/12/tea-8402876_1280.png" title="Head Phone"/>
+            </section>
+        </div>
+        <div>
